@@ -1,0 +1,39 @@
+/*Typograpy*/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.25em;
+}
+
+li {
+    list-style-type: none;
+    font-weight: 900;
+    
+}
+
+ul {
+    display: flex;
+    gap: 5em;
+}
+
+.fa-book {
+    font-size: 1.5rem;
+}
+
+
+/* images*/
+
+.logo-pic {
+    width: 14em;
+    padding: 0;
+}
