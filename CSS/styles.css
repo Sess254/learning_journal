@@ -33,15 +33,35 @@ li {
 ul {
     display: flex;
     gap: 2em;
-
 }
 
-/* body {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-areas: ;
+p{
+    line-height: 1.5;
+}
 
-} */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "feat"
+        "blg1"
+        "blg2"
+        "blg3";
+
+} 
+
+.featured {
+    grid-area: feat;
+}
+.blog1 {
+    grid-area: blg1;
+}
+.blog2{
+    grid-area: blg2;
+}
+.blog3{
+    grid-area: blg3;
+}
 
 /* images*/
 
@@ -54,7 +74,7 @@ ul {
     background-image: url('../images/Pasted\ image\ \(2\).png');
     background-size: cover;
     background-position: center;
-    height: 25em;
+    min-height: 25em;
     color: white;
 }
 
@@ -64,10 +84,11 @@ ul {
     flex-direction: column;
     gap: 1em;
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    width: 80%;
 }
 
 .featured-blog-h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .featured-blog-text {
@@ -79,12 +100,43 @@ ul {
 }
 
 .blog-one {
+    padding: 1.5em;
     margin: 0 auto;
-    padding: 1em;
+    font-size: 1.4em;
 }
+
+
 
 .blog-container {
     display: flex;
     flex-direction: column;
     gap: .6em;
+}
+
+.blog-text {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.view-more-container {
+    text-align: center;
+    padding: .5em;
+}
+
+.view-more{
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+footer {
+    background: #202020;
+    color: white;
+    padding: .5em;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 1.5em;
 }
