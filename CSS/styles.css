@@ -14,6 +14,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 1.25em;
+    grid-area: head;
 
 }
 
@@ -39,7 +40,19 @@ p{
     line-height: 1.5;
 }
 
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "head"
+        "main"
+        "foot";
+}
+
+
+
 main {
+    grid-area: main;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -134,6 +147,7 @@ footer {
     background: #202020;
     color: white;
     padding: .5em;
+    grid-area: foot;
 }
 
 .site-footer {
