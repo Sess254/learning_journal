@@ -38,6 +38,7 @@ ul {
 
 p{
     line-height: 1.5;
+    color: rgb(55, 54, 54);
 }
 
 body {
@@ -87,12 +88,13 @@ main {
     background-image: url('../images/Pasted\ image\ \(2\).png');
     background-size: cover;
     background-position: center;
-    min-height: 25em;
+    width: auto;
+    height: auto;
     color: white;
 }
 
 .featured-blog-container {
-    padding: 10em 1em;
+    padding: .5em 1em;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -106,6 +108,7 @@ main {
 
 .featured-blog-text {
     font-size: 1rem;
+    color: white;
 }
 
 .blog-img {
@@ -153,4 +156,10 @@ footer {
 .site-footer {
     text-align: center;
     padding: 1.5em;
+    color: white;
+}
+
+
+.footer-text {
+    color: white;
 }
