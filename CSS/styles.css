@@ -111,8 +111,10 @@ main {
     color: white;
 }
 
-.blog-img {
+.featured-blog-img,
+.blog-img{
     width: 100%;
+    margin: 0 auto;
 }
 
 .blog-one {
@@ -162,4 +164,47 @@ footer {
 
 .footer-text {
     color: white;
+}
+
+
+/* styling for the articles page */
+
+.featured-article-h1 {
+    font-weight: 900;
+    font-size: 1.7rem;
+    width: 80%;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 0 1em;
+    padding: 1em 0;
+    grid-area: feat;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.recent-posts {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+
+/* styles for the about page */
+
+.self-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.about-me-h1 {
+    font-size: 2em;
+    width: 80%;
 }
