@@ -77,6 +77,12 @@ main {
     grid-area: blg3;
 }
 
+.blog4,
+.blog5,
+.blog6 {
+    display: none;
+}
+
 /* images*/
 
 .logo-pic {
@@ -85,12 +91,11 @@ main {
 }
 
 .featured-blog {
-    background-image: url('../images/Pasted\ image\ \(2\).png');
+    background-image: url('../images/Pasted\ image\ \(10\).png');
     background-size: cover;
     background-position: center;
     width: auto;
     height: auto;
-    color: white;
 }
 
 .featured-blog-container {
@@ -104,6 +109,7 @@ main {
 
 .featured-blog-h1 {
     font-size: 1.7rem;
+    color: white;
 }
 
 .featured-blog-text {
@@ -139,13 +145,15 @@ main {
 }
 
 .view-more-container {
-    text-align: center;
+    display: flex;
     padding: .5em;
-}
+    margin: 0 auto;
+}  
 
 .view-more{
     text-decoration: underline;
     font-size: 1.2em;
+    
 }
 
 footer {
@@ -199,12 +207,120 @@ h2 {
 /* styles for the about page */
 
 .self-img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 
 .about-me-h1 {
     font-size: 2em;
     width: 80%;
+    padding-bottom: .5em;
+}
+
+
+
+/* media queries */
+
+@media(min-width: 580px) {
+    .featured-blog {
+        /* width: 100%; */
+        height: 610px;
+    }
+
+    .featured-blog-container {
+        padding: 30em 1em 5em;
+        width: 50%;
+    }
+
+
+    .home-main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "feat feat feat"
+            "blg1 blg2 blg3"
+            "blg4 blg5 blg6"
+            "view view view";
+    }
+
+    .blog4,
+    .blog5,
+    .blog6 {
+    display: flex;
+    }
+
+    .view-more-container {
+         grid-area: view;
+    }
+
+    .article-main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "feat feat feat"
+            "atcn atcn atcn"
+            "rect rect rect"
+            "blg1 blg2 blg3";
+
+    }
+
+    .featured-article {
+        grid-area: feat;
+    }
+
+    .center {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .recent-posts {
+        grid-area: rect;
+    }
+
+    .avatar {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .articles {
+        grid-area: arti;
+        margin: 0 auto;
+
+    }
+
+    .about-main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "abtm abtm abtm"
+            "arti arti arti"
+            "rect rect rect"
+            "blg1 blg2 blg3";
+
+    }
+
+    .about-me {
+        grid-area: abtm;
+    }
+
+
+    .logo-pic {
+        width: 15em;
+        padding: 0;
+    }
+
+    .header-text {
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+    }
+
+    main {
+        max-width: 2500px;
+        margin: 0 auto;
+    }
+
+
+
+
+    
+
 }
